@@ -1,4 +1,4 @@
-1. Please first an instance of PostgreSQL with PostGIS.
+1. Please first instantiate PostgreSQL with PostGIS.
 (Preferably Docker container of mdillon/postgis)
 
 2. Paste the DB URI in config.json
