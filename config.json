@@ -1,0 +1,5 @@
+{
+	"db_uri":"postgres://postgres:password@localhost:5432/apitest",
+	"csv_uri":"https://raw.githubusercontent.com/sanand0/pincode/master/data/IN.csv",
+	"geojson_uri":"https://gist.githubusercontent.com/ramsingla/6202001/raw/1dc42df3c6d8f4db95b7f7b65add1f520578ab33/map.geojson"
+}
