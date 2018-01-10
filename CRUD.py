@@ -108,8 +108,8 @@ def createPinMap(args):
 	try:
 		acc = int(args[5])
 	except Exception as e:
-		print('CRUD.createPinMap')
-		print(type(e))
+		#print('CRUD.createPinMap')
+		#print(type(e))
 		acc = 0
 	# Skip rows without lat long
 	try:
@@ -117,8 +117,8 @@ def createPinMap(args):
 		float(args[3])
 		float(args[4])
 	except Exception as e:
-		print('CRUD.createPinMap')
-		print(type(e))
+		#print('CRUD.createPinMap')
+		#print(type(e))
 		return None
 
 	return PinMap(key=args[0], place_name=args[1], admin_name1=args[2], location='POINT(%s %s)'%(args[4],args[3]), accuracy=acc)
@@ -136,7 +136,7 @@ def populateDB():
 	csv_reader.__next__()
 	for i in csv_reader:
 		stdout.write('\r')
-		stdout.write('percentage complete = %f %'%((current/total)*100))
+		stdout.write('percentage complete = %f %%'%((current/total)*100))
 		stdout.flush()
 		current+=1
 		if (len(i) == 6) and (createPinMap(i) is not None):

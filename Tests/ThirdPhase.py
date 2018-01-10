@@ -1,6 +1,7 @@
 import unittest
 from urllib.request import Request,urlopen
 from json import loads
+from socket import create_connection,socket
 
 class TestGETCityMethods(unittest.TestCase):
 	def test_connection(self):

@@ -59,6 +59,7 @@ def parseRoot(geoJson={'type':'','features':[]}):
 		print('Total Number of Features is = %d'%len(geoJson['features']))
 		for i in geoJson['features']:
 			parseFeature(i)
+		print('Done!')
 
 if __name__ == "__main__":
 	url = loads(open('config.json').read())['geojson_uri']
